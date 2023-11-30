@@ -1,0 +1,278 @@
+.img-page .hero-header{
+    color: var(--text-color);
+    /* justify-content: start; */
+    align-items: center;
+    text-align: center;
+    padding: 5px 50px 20px 50px;
+    margin: 5px 0 10px 0;
+    border-bottom: 1px solid #ebecf0;
+
+}
+
+.img-page .select {
+    display: none;
+}
+
+.img-page .hero-header-left {
+    display: flex;
+}
+
+.img-page .explore {
+    display: none;
+}
+
+.img-page .form-container {
+    margin-top: 5px;
+    padding: 10px 30px;
+}
+
+.img-body-img-container {
+    /* width: 700px; */
+    height: 500px;
+    /* display: grid; */
+    place-items: center;
+    margin-bottom: 2rem;
+    padding: 0 100px;
+    position: relative;
+}
+
+.img-body-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-page-body {
+    display: grid;
+    grid-template-columns: 3.5fr 1.5fr;
+    margin: 20px 0 0 10px;
+}
+
+.img-page .img-gallery li {
+    height: 300px;
+
+}
+
+.related {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+
+.arrow-down {
+    font-size: 20px;
+}
+
+.logo-btn {
+    padding: 10px 20px;
+    color: var(--text-color);
+    background-color: #fff;
+    border: 1px solid #ebecf0;
+    border-radius: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.img-page-right {
+    padding: 5px 50px 5px 20px;
+    position: relative;
+}
+
+.sticky {
+    position: sticky; 
+    display: grid; 
+    gap: 1rem;
+    border: 1px solid #ebecf0;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ebecf0;
+    height: 60px;
+    gap: 10px;
+}
+
+.top div {
+    width: 100%;
+}
+
+.top div button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle {
+    display: grid;
+    gap: 1rem;
+    border-bottom: 1px solid #ebecf0;
+    padding-bottom: 1rem;
+}
+
+.middle-btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.middle-btns button {
+    width: 100%;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    color: var(--text-color);
+}
+
+.bottom {
+    padding-bottom: 1rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-img {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.comments-list {
+    margin-top: 1rem
+}
+
+.comments-container {
+    margin: 1rem 10px 2rem 10px;
+    box-shadow: 0 0 5px lightgray;
+    padding: 20px 20px 15px 20px;
+    border-radius: 15px;
+}
+
+.comments-container h4, h5 {
+    color: rgb(36, 35, 35);
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.comments-container  p {
+    color: var(--text-color);
+    margin-top: 6px
+}
+
+.comments-container input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0 0 5px lightgray;
+    border-radius: 30px;
+    outline: none;
+}
+
+.each-comment {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.user-img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 5px lightgray;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.red {
+    color: red;
+}
+
+.savedImage {
+    width: 375px;
+    height: 300px;
+    margin-top: 1rem;
+    position: absolute;
+    right: -100%;
+    border-radius: 15px;
+    transition: all .3s ease;
+    box-shadow: 0 0 5px lightgray;
+    padding: 10px;
+}
+
+.show-saved {
+    right: 10%;
+}
+
+.saved-img-flex {
+    display: flex;
+    gap: 10px;
+
+}
+.saved-img-flex div {
+    justify-items: start;
+    /* text-align: center; */
+}
+
+.saved-img-flex p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.saved-img-flex h5 {
+    columns: var(--title-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.saved-img-flex p {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.saved-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.saved-logo {
+   font-size: 15px;
+}
+
+.saved-details {
+    display: grid;
+    justify-content: start;
+
+}
+
+@media screen and (max-width: 1100px) {
+    .img-body-img-container {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    .img-page-right {
+        display: none;
+    }
+
+    .img-page-body {
+        grid-template-columns: 1fr;
+        margin: 20px 0 0 10px;
+        padding: 10px 50px;
+    }
+}
