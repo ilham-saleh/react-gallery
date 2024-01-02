@@ -1,20 +1,20 @@
-import React, { useContext } from 'react'
+import React, { useContext } from "react";
 
-import Hero from './Hero/Hero'
-import Choices from './Body/Choices'
-import ImgBody from './Body/ImgBody/ImgBody'
+import Hero from "./Hero/Hero";
+import Choices from "./Body/Choices";
+import ImgBody from "./Body/ImgBody/ImgBody";
 // import MyContext from '../../App'
 const Home = () => {
-    // const {images} = useContext(MyContext)
+  // const {images} = useContext(MyContext)
 
-    // console.log(images)
+  // console.log(images)
   return (
     <>
-        <Hero />
-        <Choices />
-        <ImgBody />
+      <Hero />
+      <Choices />
+      <ImgBody />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

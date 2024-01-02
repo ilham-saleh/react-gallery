@@ -1,6 +1,6 @@
-import React, { useContext, useState } from 'react'
-import {MyContext} from '../../../App'
-import './Body.css'
+import React, { useContext, useState } from "react";
+import { MyContext } from "../../../App";
+import "./Body.css";
 
 import { Link, NavLink } from "react-router-dom";
 
@@ -11,26 +11,42 @@ import { Link, NavLink } from "react-router-dom";
 //     nature = localStorage.getItem('nature')
 //   }
 
-//   return 'nature' 
+//   return 'nature'
 // }
 
 const Choices = () => {
-    const {setTerm} = useContext(MyContext)
-    // const [nature, setNature] = useState(getLocalStorageChoice())
+  const { setTerm } = useContext(MyContext);
+  // const [nature, setNature] = useState(getLocalStorageChoice())
 
-    // console.log(images)
+  // console.log(images)
   return (
-    <section className='choices'>
-      <button className='button term-btn' onClick={() => setTerm('nature')}>Nature</button>
-      <button className='button term-btn' onClick={() => setTerm('wallpaper')}>Wallpaper</button>
-      <button className='button term-btn' onClick={() => setTerm('background')}>Background</button>
-      <button className='button term-btn' onClick={() => setTerm('sky')}>Sky</button>
-      <button className='button term-btn' onClick={() => setTerm('cat')}>Cat</button>
-      <button className='button term-btn' onClick={() => setTerm('food')}>Food</button>
-      <button className='button term-btn' onClick={() => setTerm('flowers')}>Flowers</button>
-      <button className='button term-btn' onClick={() => setTerm('winter')}>Winter</button>
+    <section className="choices">
+      <button className="button term-btn" onClick={() => setTerm("nature")}>
+        Nature
+      </button>
+      <button className="button term-btn" onClick={() => setTerm("wallpaper")}>
+        Wallpaper
+      </button>
+      <button className="button term-btn" onClick={() => setTerm("background")}>
+        Background
+      </button>
+      <button className="button term-btn" onClick={() => setTerm("sky")}>
+        Sky
+      </button>
+      <button className="button term-btn" onClick={() => setTerm("cat")}>
+        Cat
+      </button>
+      <button className="button term-btn" onClick={() => setTerm("food")}>
+        Food
+      </button>
+      <button className="button term-btn" onClick={() => setTerm("flowers")}>
+        Flowers
+      </button>
+      <button className="button term-btn" onClick={() => setTerm("winter")}>
+        Winter
+      </button>
     </section>
-  )
-}
+  );
+};
 
-export default Choices
+export default Choices;
